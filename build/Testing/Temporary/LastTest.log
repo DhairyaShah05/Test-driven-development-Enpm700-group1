@@ -1,0 +1,155 @@
+Start testing: Oct 06 00:57 EDT
+----------------------------------------------------------
+1/5 Testing: dummy_test.this_should_pass
+1/5 Test: dummy_test.this_should_pass
+Command: "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test/cpp-test" "--gtest_filter=dummy_test.this_should_pass" "--gtest_also_run_disabled_tests"
+Directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test
+"dummy_test.this_should_pass" start time: Oct 06 00:57 EDT
+Output:
+----------------------------------------------------------
+Note: Google Test filter = dummy_test.this_should_pass
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from dummy_test
+[ RUN      ] dummy_test.this_should_pass
+[       OK ] dummy_test.this_should_pass (0 ms)
+[----------] 1 test from dummy_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"dummy_test.this_should_pass" end time: Oct 06 00:57 EDT
+"dummy_test.this_should_pass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: dummy_test.this_should_pass_too
+2/5 Test: dummy_test.this_should_pass_too
+Command: "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test/cpp-test" "--gtest_filter=dummy_test.this_should_pass_too" "--gtest_also_run_disabled_tests"
+Directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test
+"dummy_test.this_should_pass_too" start time: Oct 06 00:57 EDT
+Output:
+----------------------------------------------------------
+Note: Google Test filter = dummy_test.this_should_pass_too
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from dummy_test
+[ RUN      ] dummy_test.this_should_pass_too
+[       OK ] dummy_test.this_should_pass_too (0 ms)
+[----------] 1 test from dummy_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"dummy_test.this_should_pass_too" end time: Oct 06 00:57 EDT
+"dummy_test.this_should_pass_too" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: dummy_test.this_will_no_longer_fail
+3/5 Test: dummy_test.this_will_no_longer_fail
+Command: "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test/cpp-test" "--gtest_filter=dummy_test.this_will_no_longer_fail" "--gtest_also_run_disabled_tests"
+Directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test
+"dummy_test.this_will_no_longer_fail" start time: Oct 06 00:57 EDT
+Output:
+----------------------------------------------------------
+Note: Google Test filter = dummy_test.this_will_no_longer_fail
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from dummy_test
+[ RUN      ] dummy_test.this_will_no_longer_fail
+[       OK ] dummy_test.this_will_no_longer_fail (0 ms)
+[----------] 1 test from dummy_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"dummy_test.this_will_no_longer_fail" end time: Oct 06 00:57 EDT
+"dummy_test.this_will_no_longer_fail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: PIDControllerTest.TestComputeStub
+4/5 Test: PIDControllerTest.TestComputeStub
+Command: "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test/cpp-test" "--gtest_filter=PIDControllerTest.TestComputeStub" "--gtest_also_run_disabled_tests"
+Directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test
+"PIDControllerTest.TestComputeStub" start time: Oct 06 00:57 EDT
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PIDControllerTest.TestComputeStub
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PIDControllerTest
+[ RUN      ] PIDControllerTest.TestComputeStub
+/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/test/test1.cpp:29: Failure
+Expected equality of these values:
+  1.0
+    Which is: 1
+  pid.compute(10.0, 5.0)
+    Which is: 0
+
+[  FAILED  ] PIDControllerTest.TestComputeStub (0 ms)
+[----------] 1 test from PIDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PIDControllerTest.TestComputeStub
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"PIDControllerTest.TestComputeStub" end time: Oct 06 00:57 EDT
+"PIDControllerTest.TestComputeStub" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: PIDControllerTest.TestInitialization
+5/5 Test: PIDControllerTest.TestInitialization
+Command: "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test/cpp-test" "--gtest_filter=PIDControllerTest.TestInitialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test
+"PIDControllerTest.TestInitialization" start time: Oct 06 00:57 EDT
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PIDControllerTest.TestInitialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PIDControllerTest
+[ RUN      ] PIDControllerTest.TestInitialization
+/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/test/test1.cpp:43: Failure
+Expected equality of these values:
+  1.0
+    Which is: 1
+  pid.compute(15.0, 7.0)
+    Which is: 0
+
+[  FAILED  ] PIDControllerTest.TestInitialization (0 ms)
+[----------] 1 test from PIDControllerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] PIDControllerTest.TestInitialization
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"PIDControllerTest.TestInitialization" end time: Oct 06 00:57 EDT
+"PIDControllerTest.TestInitialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 06 00:57 EDT

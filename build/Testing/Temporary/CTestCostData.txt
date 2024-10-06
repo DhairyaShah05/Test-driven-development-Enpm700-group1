@@ -1,0 +1,8 @@
+dummy_test.this_should_pass 3 0.000511218
+dummy_test.this_should_pass_too 3 0.000572066
+dummy_test.this_will_no_longer_fail 3 0.000470869
+PIDControllerTest.TestComputeStub 0 0
+PIDControllerTest.TestInitialization 0 0
+---
+PIDControllerTest.TestComputeStub
+PIDControllerTest.TestInitialization
