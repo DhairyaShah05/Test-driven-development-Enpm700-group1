@@ -1,6 +1,7 @@
 #include "lib.hpp"
 #include "lib1.hpp"
 #include "lib2.hpp"
+#include "PIDController.hpp"
 
 int main() {
   dummy();
