@@ -7,6 +7,14 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
+## Authors
+Dhairya Shah
+Abhishek Ahvad
+
+## UML and Activity Diagram for myPID Library 
+![UML Diagram](diagrams/UML.png)
+
+![Activity Diagram](diagrams/activitydiagram.png)
 
 ## Overview
 
