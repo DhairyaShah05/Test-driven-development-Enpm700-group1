@@ -1,4 +1,4 @@
-# Install script for directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/test
+# Install script for directory: /home/abhishek/Test-driven-development-Enpm700-group1/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

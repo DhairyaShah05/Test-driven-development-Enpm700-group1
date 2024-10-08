@@ -3,11 +3,9 @@
  * @brief Unit tests for the PIDController class.
  * 
  * This file contains unit tests for the PIDController class. The tests are designed
- * to verify that the class behaves as expected, even with the current stubbed 
- * implementation of the compute method. The tests are intentionally expected to fail
- * since the compute method is not yet implemented and currently returns a constant value.
+ * to verify the basic functionality of the PID controller.
  * 
- * @author Dhairya Shah, Abhishek Ahvad
+ * @author Dhairya Shah, Abhishek Avhad
  * @date 2024
  */
 
@@ -15,31 +13,36 @@
 #include "PIDController.hpp"
 
 /**
- * @brief Test if the PID controller computes a constant value in the stub.
+ * @brief Test if the PID controller computes the correct output.
  * 
- * This test case verifies that the stub implementation of the compute method 
- * currently returns a constant value. The expectation is intentionally set to 
- * cause a failure, as the method always returns 0.0 in the stub.
- * 
- * @test The expected output is set to 1.0, which will fail since the stub 
- * compute method always returns 0.0.
+ * This test case verifies that the compute method returns the expected output
+ * for a given set of inputs and PID gains.
  */
-TEST(PIDControllerTest, TestComputeStub) {
-  PIDController pid(1.0, 0.5, 0.1);  ///< Initialize PID controller with arbitrary gains.
-  EXPECT_EQ(1.0, pid.compute(10.0, 5.0));  ///< Expect failure since the stub returns 0.0.
+TEST(PIDControllerTest, TestCompute) {
+    PIDController pid(1.0, 0.1, 0.05);  // Kp = 1.0, Ki = 0.1, Kd = 0.05
+    double output = pid.compute(10.0, 8.0);
+    std::cout << "Actual output: " << output << std::endl;
+    EXPECT_NEAR(2.0, output, 0.001);  // Expected output is approximately 2.0
 }
 
 /**
- * @brief Test if the constructor initializes the PID controller correctly.
+ * @brief Test if the getter and setter methods work correctly.
  * 
- * This test case verifies that the PID controller is properly initialized with the 
- * given gains. However, since the compute method is a stub, the test will fail.
- * 
- * @test The expected output is set to 1.0, which will fail because the stub 
- * method still returns 0.0. This test will pass once the compute method is fully implemented.
+ * This test case verifies that the getter and setter methods for PID gains
+ * function as expected.
  */
-TEST(PIDControllerTest, TestInitialization) {
-  PIDController pid(2.0, 1.0, 0.5);  ///< Initialize PID controller with specific gains.
-  EXPECT_EQ(1.0, pid.compute(15.0, 7.0));  ///< Expect failure since the stub returns 0.0.
+TEST(PIDControllerTest, TestGettersAndSetters) {
+    PIDController pid(1.0, 0.5, 0.1);
+    
+    EXPECT_DOUBLE_EQ(1.0, pid.getKp());
+    EXPECT_DOUBLE_EQ(0.5, pid.getKi());
+    EXPECT_DOUBLE_EQ(0.1, pid.getKd());
+    
+    pid.setKp(2.0);
+    pid.setKi(0.7);
+    pid.setKd(0.2);
+    
+    EXPECT_DOUBLE_EQ(2.0, pid.getKp());
+    EXPECT_DOUBLE_EQ(0.7, pid.getKi());
+    EXPECT_DOUBLE_EQ(0.2, pid.getKd());
 }
-

@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.14.0.zip" ABSOLUTE)
-get_filename_component(directory "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-src" ABSOLUTE)
+get_filename_component(filename "/home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-subbuild/googletest-populate-prefix/src/v1.14.0.zip" ABSOLUTE)
+get_filename_component(directory "/home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

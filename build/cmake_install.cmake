@@ -1,4 +1,4 @@
-# Install script for directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2
+# Install script for directory: /home/abhishek/Test-driven-development-Enpm700-group1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/libs/cmake_install.cmake")
+  include("/home/abhishek/Test-driven-development-Enpm700-group1/build/app/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/app/cmake_install.cmake")
+  include("/home/abhishek/Test-driven-development-Enpm700-group1/build/test/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/test/cmake_install.cmake")
+  include("/home/abhishek/Test-driven-development-Enpm700-group1/build/myPID/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -70,5 +70,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/abhishek/Test-driven-development-Enpm700-group1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

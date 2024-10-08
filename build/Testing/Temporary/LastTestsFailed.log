@@ -1,2 +1,1 @@
-4:PIDControllerTest.TestComputeStub
-5:PIDControllerTest.TestInitialization
+1:PIDControllerTest.TestCompute
