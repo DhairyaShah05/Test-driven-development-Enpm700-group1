@@ -13,35 +13,36 @@
  */
 
 #include "../include/PIDController.hpp"
-#include <cmath>
-#include <iostream>  // Added for std::cout
+#include <iostream>
 
 // Constructor implementation is not needed as it's defined inline in the header
 
 double PIDController::compute(double setpoint, double actual) {
-    static double lastError = 0.0;
-    static double integral = 0.0;
-    
-    // Calculate error
     double error = setpoint - actual;
     
-    // Calculate integral
-    integral += error;
+    // P term
+    double pTerm = Kp * error;
     
-    // Calculate derivative
+    // I term
+    integral += error;
+    double iTerm = Ki * integral;
+    
+    // D term
     double derivative = error - lastError;
+    double dTerm = Kd * derivative;
     
     // Calculate PID output
-    double output = Kp * error + Ki * integral + Kd * derivative;
-    
-    // Print intermediate values for debugging
-    std::cout << "Error: " << error << ", Integral: " << integral 
-              << ", Derivative: " << derivative << std::endl;
-    std::cout << "Kp*error: " << (Kp*error) << ", Ki*integral: " << (Ki*integral) 
-              << ", Kd*derivative: " << (Kd*derivative) << std::endl;
+    double output = pTerm + iTerm + dTerm;
     
     // Update last error for next iteration
     lastError = error;
+    
+    // Debug output
+    std::cout << "PID Computation:" << std::endl;
+    std::cout << "  Setpoint: " << setpoint << ", Actual: " << actual << std::endl;
+    std::cout << "  Error: " << error << ", Integral: " << integral << ", Derivative: " << derivative << std::endl;
+    std::cout << "  P-term: " << pTerm << ", I-term: " << iTerm << ", D-term: " << dTerm << std::endl;
+    std::cout << "  Output: " << output << std::endl;
     
     return output;
 }

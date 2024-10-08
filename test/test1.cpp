@@ -11,6 +11,7 @@
 
 #include <gtest/gtest.h>
 #include "PIDController.hpp"
+#include <cmath>
 
 /**
  * @brief Test if the PID controller computes the correct output.
@@ -20,9 +21,19 @@
  */
 TEST(PIDControllerTest, TestCompute) {
     PIDController pid(1.0, 0.1, 0.05);  // Kp = 1.0, Ki = 0.1, Kd = 0.05
-    double output = pid.compute(10.0, 8.0);
+    double setpoint = 10.0;
+    double actual = 8.0;
+    double output = pid.compute(setpoint, actual);
+    
+    // Expected output calculation
+    double error = setpoint - actual;
+    double expected = 1.0 * error + 0.1 * error + 0.05 * error;  // P + I + D for first iteration
+    
+    std::cout << "Test input - Setpoint: " << setpoint << ", Actual: " << actual << std::endl;
     std::cout << "Actual output: " << output << std::endl;
-    EXPECT_NEAR(2.0, output, 0.001);  // Expected output is approximately 2.0
+    std::cout << "Expected output: " << expected << std::endl;
+    
+    ASSERT_NEAR(expected, output, 0.001) << "PID output is not within expected range";
 }
 
 /**

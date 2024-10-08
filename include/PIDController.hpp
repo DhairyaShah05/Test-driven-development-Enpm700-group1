@@ -36,14 +36,16 @@ class PIDController {
   double Kp;  ///< Proportional gain used in the PID controller.
   double Ki;  ///< Integral gain used in the PID controller.
   double Kd;  ///< Derivative gain used in the PID controller.
+  double integral;  ///< Accumulated integral error.
+  double lastError;  ///< Last error value for derivative calculation.
 
  public:
   /**
    * @brief Constructor to initialize the PID controller with specific gains.
    * 
    * This constructor initializes the PID controller by setting the proportional, 
-   * integral, and derivative gains (Kp, Ki, Kd) to the provided values. These 
-   * gains influence the behavior of the PID control algorithm.
+   * integral, and derivative gains (Kp, Ki, Kd) to the provided values. It also
+   * initializes the integral and lastError values to zero.
    * 
    * @param kp Proportional gain to be set.
    * @param ki Integral gain to be set.
@@ -52,7 +54,8 @@ class PIDController {
    * @see PIDController::Ki
    * @see PIDController::Kd
    */
-  PIDController(double kp, double ki, double kd) : Kp(kp), Ki(ki), Kd(kd) {}
+  PIDController(double kp, double ki, double kd) 
+    : Kp(kp), Ki(ki), Kd(kd), integral(0.0), lastError(0.0) {}
 
   /**
    * @brief Compute the control action based on the setpoint and actual value.
