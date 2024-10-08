@@ -1,10 +1,10 @@
-Start testing: Oct 08 15:01 EDT
+Start testing: Oct 08 18:53 EDT
 ----------------------------------------------------------
 1/2 Testing: PIDControllerTest.TestCompute
 1/2 Test: PIDControllerTest.TestCompute
 Command: "/home/abhishek/Test-driven-development-Enpm700-group1/build/test/cpp-test" "--gtest_filter=PIDControllerTest.TestCompute" "--gtest_also_run_disabled_tests"
 Directory: /home/abhishek/Test-driven-development-Enpm700-group1/build/test
-"PIDControllerTest.TestCompute" start time: Oct 08 15:01 EDT
+"PIDControllerTest.TestCompute" start time: Oct 08 18:53 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -31,7 +31,7 @@ Expected output: 2.3
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PIDControllerTest.TestCompute" end time: Oct 08 15:01 EDT
+"PIDControllerTest.TestCompute" end time: Oct 08 18:53 EDT
 "PIDControllerTest.TestCompute" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -39,7 +39,7 @@ Test Passed.
 2/2 Test: PIDControllerTest.TestGettersAndSetters
 Command: "/home/abhishek/Test-driven-development-Enpm700-group1/build/test/cpp-test" "--gtest_filter=PIDControllerTest.TestGettersAndSetters" "--gtest_also_run_disabled_tests"
 Directory: /home/abhishek/Test-driven-development-Enpm700-group1/build/test
-"PIDControllerTest.TestGettersAndSetters" start time: Oct 08 15:01 EDT
+"PIDControllerTest.TestGettersAndSetters" start time: Oct 08 18:53 EDT
 Output:
 ----------------------------------------------------------
 Running main() from /home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -58,8 +58,8 @@ Note: Google Test filter = PIDControllerTest.TestGettersAndSetters
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PIDControllerTest.TestGettersAndSetters" end time: Oct 08 15:01 EDT
+"PIDControllerTest.TestGettersAndSetters" end time: Oct 08 18:53 EDT
 "PIDControllerTest.TestGettersAndSetters" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 08 15:01 EDT
+End testing: Oct 08 18:53 EDT

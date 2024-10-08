@@ -83,7 +83,7 @@ class PIDController {
    * @return The proportional gain value currently set in the controller.
    * @see PIDController::setKp
    */
-  double getKp() const;
+  double getKp() const { return Kp; }
 
   /**
    * @brief Get the integral gain value (Ki).
@@ -93,7 +93,7 @@ class PIDController {
    * @return The integral gain value currently set in the controller.
    * @see PIDController::setKi
    */
-  double getKi() const;
+  double getKi() const { return Ki; }
 
   /**
    * @brief Get the derivative gain value (Kd).
@@ -103,7 +103,7 @@ class PIDController {
    * @return The derivative gain value currently set in the controller.
    * @see PIDController::setKd
    */
-  double getKd() const;
+  double getKd() const { return Kd; }
 
   /**
    * @brief Set the proportional gain (Kp).
@@ -114,7 +114,8 @@ class PIDController {
    * @param kp New proportional gain value to be set.
    * @see PIDController::getKp
    */
-  void setKp(double kp);
+  void setKp(double kp) { Kp = kp; }
+
   /**
    * @brief Set the integral gain (Ki).
    * 
@@ -124,7 +125,7 @@ class PIDController {
    * @param ki New integral gain value to be set.
    * @see PIDController::getKi
    */
-  void setKi(double ki);
+  void setKi(double ki) { Ki = ki; }
 
   /**
    * @brief Set the derivative gain (Kd).
@@ -135,7 +136,7 @@ class PIDController {
    * @param kd New derivative gain value to be set.
    * @see PIDController::getKd
    */
-  void setKd(double kd);
+  void setKd(double kd) { Kd = kd; }
 };
 
 #endif  // PIDCONTROLLER_HPP_
