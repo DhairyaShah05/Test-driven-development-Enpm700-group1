@@ -1,5 +1,0 @@
-add_test( PIDControllerTest.TestCompute /home/abhishek/Test-driven-development-Enpm700-group1/build/test/cpp-test [==[--gtest_filter=PIDControllerTest.TestCompute]==] --gtest_also_run_disabled_tests)
-set_tests_properties( PIDControllerTest.TestCompute PROPERTIES WORKING_DIRECTORY /home/abhishek/Test-driven-development-Enpm700-group1/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( PIDControllerTest.TestGettersAndSetters /home/abhishek/Test-driven-development-Enpm700-group1/build/test/cpp-test [==[--gtest_filter=PIDControllerTest.TestGettersAndSetters]==] --gtest_also_run_disabled_tests)
-set_tests_properties( PIDControllerTest.TestGettersAndSetters PROPERTIES WORKING_DIRECTORY /home/abhishek/Test-driven-development-Enpm700-group1/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( cpp-test_TESTS PIDControllerTest.TestCompute PIDControllerTest.TestGettersAndSetters)

@@ -1,1 +1,0 @@
-/usr/lib/ccache/c++  -g --coverage -fprofile-abs-path -g --static CMakeFiles/cpp-test.dir/test1.cpp.o -o cpp-test  -lgcov ../lib/libgtest.a ../lib/libgtest_main.a ../myPID/libmyPID.a ../lib/libgtest.a -lgcov 

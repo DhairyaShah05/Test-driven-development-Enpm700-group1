@@ -9,7 +9,7 @@
 
 ## Authors
 Dhairya Shah
-Abhishek Ahvad
+Harsh Senjaliya
 
 ## UML and Activity Diagram for myPID Library 
 ![UML Diagram](diagrams/UML.png)
