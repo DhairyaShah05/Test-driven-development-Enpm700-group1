@@ -6,7 +6,7 @@
  * declared in PIDController.hpp. It includes the full implementation of the
  * PID control algorithm in the compute method.
  * 
- * @author Dhairya
+ * @author Dhairya, Abhishek
  * @date 2024
  * @copyright Acme Robotics
  */
