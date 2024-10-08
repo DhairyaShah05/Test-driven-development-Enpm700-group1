@@ -14,8 +14,8 @@ project(googletest-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip"
-                    SOURCE_DIR          "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-src"
-                    BINARY_DIR          "/home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-build"
+                    SOURCE_DIR          "/home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-src"
+                    BINARY_DIR          "/home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -91,16 +91,16 @@ endif()
 # ref: https://iamsorush.com/posts/cpp-cmake-essential/
 # ref: https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 #
-add_subdirectory(libs)
 add_subdirectory(app)
 add_subdirectory(test)
+add_subdirectory(myPID)
 
 # create a target to build documentation
 doxygen_add_docs(docs           # target name
   # List of files or directories
   ${PROJECT_SOURCE_DIR}/app
-  ${PROJECT_SOURCE_DIR}/libs
   ${PROJECT_SOURCE_DIR}/include
+  ${PROJECT_SOURCE_DIR}/myPID
   )
 
 # create targets for building code coverage reports
@@ -123,8 +123,6 @@ if(WANT_COVERAGE)
     NAME app_coverage          # target name
     EXECUTABLE shell-app       # what to run insdie the build directory?
     EXCLUDE
-    "test/test.cpp"    # App does not run unit test, so don't analyze it
-    "test/main.cpp"    # App does not run unit test, so don't analyze it
     "test/test1.cpp"   # New test added
     )
 

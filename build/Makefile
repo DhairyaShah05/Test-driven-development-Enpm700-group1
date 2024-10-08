@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2
+CMAKE_SOURCE_DIR = /home/abhishek/Test-driven-development-Enpm700-group1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build
+CMAKE_BINARY_DIR = /home/abhishek/Test-driven-development-Enpm700-group1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/CMakeFiles /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhishek/Test-driven-development-Enpm700-group1/build/CMakeFiles /home/abhishek/Test-driven-development-Enpm700-group1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abhishek/Test-driven-development-Enpm700-group1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -263,45 +263,6 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named myLib1
-
-# Build rule for target.
-myLib1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myLib1
-.PHONY : myLib1
-
-# fast build rule for target.
-myLib1/fast:
-	$(MAKE) $(MAKESILENT) -f libs/lib1/CMakeFiles/myLib1.dir/build.make libs/lib1/CMakeFiles/myLib1.dir/build
-.PHONY : myLib1/fast
-
-#=============================================================================
-# Target rules for targets named myLib2
-
-# Build rule for target.
-myLib2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myLib2
-.PHONY : myLib2
-
-# fast build rule for target.
-myLib2/fast:
-	$(MAKE) $(MAKESILENT) -f libs/lib2/CMakeFiles/myLib2.dir/build.make libs/lib2/CMakeFiles/myLib2.dir/build
-.PHONY : myLib2/fast
-
-#=============================================================================
-# Target rules for targets named myPID
-
-# Build rule for target.
-myPID: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myPID
-.PHONY : myPID
-
-# fast build rule for target.
-myPID/fast:
-	$(MAKE) $(MAKESILENT) -f libs/myPID/CMakeFiles/myPID.dir/build.make libs/myPID/CMakeFiles/myPID.dir/build
-.PHONY : myPID/fast
-
-#=============================================================================
 # Target rules for targets named shell-app
 
 # Build rule for target.
@@ -327,6 +288,19 @@ cpp-test/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/cpp-test.dir/build.make test/CMakeFiles/cpp-test.dir/build
 .PHONY : cpp-test/fast
 
+#=============================================================================
+# Target rules for targets named myPID
+
+# Build rule for target.
+myPID: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myPID
+.PHONY : myPID
+
+# fast build rule for target.
+myPID/fast:
+	$(MAKE) $(MAKESILENT) -f myPID/CMakeFiles/myPID.dir/build.make myPID/CMakeFiles/myPID.dir/build
+.PHONY : myPID/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -348,8 +322,6 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... myLib1"
-	@echo "... myLib2"
 	@echo "... myPID"
 	@echo "... shell-app"
 .PHONY : help

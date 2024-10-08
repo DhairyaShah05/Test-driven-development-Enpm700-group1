@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-src/googlemock
-# Build directory: /home/dhairya/UMD/enpm_700/group_project/cpp-boilerplate-v2/build/_deps/googletest-build/googlemock
+# Source directory: /home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-src/googlemock
+# Build directory: /home/abhishek/Test-driven-development-Enpm700-group1/build/_deps/googletest-build/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
